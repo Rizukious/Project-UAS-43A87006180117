@@ -18,4 +18,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UsersRepository extends JpaRepository<Users, Integer>{
     public Page<Users> findByNameLike(String Name, Pageable pageable);
+
 }
